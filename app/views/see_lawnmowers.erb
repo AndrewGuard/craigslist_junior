@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Here are your lawnmowers</h1>
+    <% @lawnmowers.each do |lawnmower| %>
+    <br>
+    <p><a href="/lawnmowers/<%=lawnmower.id%>"> <%= lawnmower.make %> <%= lawnmower.model %> </a> <a id="delete_button" href="/lawnmower/<%= lawnmower.id %>/delete"> Delete Lawnmower </a> </p>
+    <% end %>
+
+    <p> <br> <a href="/create_lawnmower_form"> List Your Lawnmower! </a> </p>
+</div>

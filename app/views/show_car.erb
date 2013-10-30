@@ -1,0 +1,9 @@
+<div class="container">
+
+  <p> <%= @car.id %> <br><br> <%= @car.make %> <br><br> <%= @car.model %>  </p>
+
+  <p> Contact owner at: <%= @car.owner.email %>, <%= @car.owner.phone_number %></p>
+
+  <p> <a href="/car/<%= car.id %>/delete"> Delete Car </a> </p>
+
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Here are your Cars</h1>
+    <% @cars.each do |car| %>
+    <br>
+    <p> <a href="/cars/<%=car.id%>"> <%= car.make %> <%= car.model %> </a>  <a id="delete_button" href="/car/<%= car.id %>/delete"> Delete Car </a></p>
+    <% end %>
+
+     <p> <br> <a href="/create_car_form"> List Your Car! </a> </p>
+</div>
+
